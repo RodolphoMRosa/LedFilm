@@ -1,0 +1,125 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor cinza claro para o fundo */
+}
+
+/* === SEÇÃO MODIFICADA === */
+
+/* Cabeçalho e Logo */
+header {
+    background-color: white;
+    width: 100%; /* Garante que o container ocupe toda a largura */
+    /* Removemos o padding e o alinhamento para que a imagem possa preencher o espaço */
+}
+
+#logo {
+    width: 100%; /* FAZ A IMAGEM OCUPAR 100% DA LARGURA DA TELA */
+    height: 300px; /* ALTURA FIXA PARA O BANNER. Ajuste este valor como preferir. */
+    /* O valor original de 20cm foi substituído por ser muito grande e impraticável para a web. */
+    object-fit: cover; /* IMPORTANTE: Faz a imagem cobrir todo o espaço, cortando o excesso sem distorcer. */
+    object-position: center; /* Centraliza a imagem no espaço disponível, útil caso ela seja cortada. */
+    display: block; /* Remove qualquer espaço extra que o navegador possa adicionar abaixo da imagem. */
+}
+
+/* === FIM DA SEÇÃO MODIFICADA === */
+
+
+/* Menu Principal */
+.menu-principal {
+    background-color: white;
+    padding: 8px 0; /* Aumentei o preenchimento para dar mais espaço */
+    border: 8px solid #000000; /* BORDA GERAL EM VOLTA DE TODO O MENU (cinza escuro) */
+    margin: 0; /* Adiciona uma pequena margem nas laterais do menu */
+}
+
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-principal li {
+    margin: 5px 10px; /* Espaçamento entre os itens */
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: black;
+    /* BORDA EM VOLTA DE CADA OPÇÃO (cinza escuro) */
+    border: 1px solid #555; 
+    padding: 10px 20px;
+    border-radius: 5px; /* Cantos arredondados para cada opção */
+    display: block; /* Garante que o padding e a borda se comportem bem */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o menu */
+.menu-principal a:hover {
+    background-color: #080808; /* Fundo fica vermelho escuro no hover */
+    color: white; /* Texto fica branco para dar contraste */
+}
+
+/* Estilo para o Título de Destaque "Trabalhos Recentes" */
+.container-titulo-destaque {
+    text-align: center; /* Centraliza o elemento filho */
+    padding-top: 50px;
+    padding-bottom: 1px; /* Adiciona um espaço abaixo do título */
+    background-color: #f0f0f0; /* Mesma cor de fundo do corpo da página */
+}
+
+.titulo-destaque {
+    display: inline-block; /* Faz a borda se ajustar ao tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 1.1em; /* Aumenta um pouco o tamanho da fonte */
+
+    /* ESTILO IDÊNTICO AO DAS OPÇÕES DO MENU */
+    text-decoration: none;
+    color: black;
+    border: 1px solid #555; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white; /* Fundo branco para se destacar */
+}
+
+/* Conteúdo Principal e Galeria */
+.conteudo-principal {
+    padding: 40px 20px;
+}
+
+#galeria-container {
+    max-width: 900px; /* Largura máxima do contêiner da galeria */
+    margin: 0 auto; /* Centraliza a galeria na página */
+    text-align: center;
+}
+
+#imagem-rotativa {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar a foto */
+    border-radius: 8px;
+}
+
+/* Seções de Conteúdo */
+.secoes-wrapper {
+    max-width: 900px;
+    margin: 40px auto 0 auto; /* Espaçamento acima das seções e centralização */
+}
+
+.conteudo-secao {
+    display: none; /* Esconde todas as seções por padrão */
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mágica do CSS: Exibe a seção quando ela é o "alvo" do link */
+.conteudo-secao:target {
+    display: block;
+}
