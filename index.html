@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>LedFilm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="https://www.instagram.com/loja_ledfilm/" target="_blank" id="instagram-link">
+                <img src="img/instagram-icon.jpg" alt="Link para o Instagram da loja">
+            </a>
+            
+            <img src="img/logo.jpeg" alt="Logo da empresa" id="logo">
+            
+            <div class="info-sobre-logo">
+                Rua Lins de Vasconcelos, 311. Tel.: (21) 96455-3456
+            </div>
+        </div>
+
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#trabalhos_recentes">Trabalhos Recentes</a></li>
+                <li><a href="#insulfilm">Insulfilm</a></li>
+                <li><a href="#som_automotivo">Som</a></li>
+                <li><a href="#tipos_alarmes">Alarmes</a></li>
+                <li><a href="#sobre_nos">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="secoes-wrapper">
+            
+            <section id="trabalhos_recentes" class="conteudo-secao">
+                <div id="galeria-container">
+                    <img src="img/carro1.avif" id="imagem-galeria" alt="Carro em exibição">
+                    <button id="btn-anterior" class="btn-nav-galeria">&lt;</button>
+                    <button id="btn-proximo" class="btn-nav-galeria">&gt;</button>
+                </div>
+            </section>
+
+            <section id="insulfilm" class="conteudo-secao">
+                <h2>Insulfilm</h2>
+                <p>A ideia é pegar fotos de carros com insulfim nano sei la o que e colocar, um de 5, de 20, de 35 e de 50, ou quantos puder.</br>
+                    Colocar mais abaixo o de oputra marca lá e um de 5, de 20, de 35 e de 50, ou quantos puder.</br>
+                    E assim vai, quantos pudermos colocar.</br></p>
+            </section>
+
+            <section id="som_automotivo" class="conteudo-secao">
+                <h2>Som Automotivo</h2>
+                <p>Algumas fotos de carros maneiros que vc fez com o tipo de som que tem na loja, finalidade, tipo para qualidade ou para fazer esporro mesmo. </br>
+                    As marcas de som que vc usa, do produto.</p>
+            </section>
+
+            <section id="tipos_alarmes" class="conteudo-secao">
+                <h2>Alarmes</h2>
+                <p>igual a parte de som.</p>
+            </section>
+
+            <section id="sobre_nos" class="conteudo-secao">
+                <h2>Sobre Nós</h2>
+                <p>Conte a história de como vcs começaram, sem a parte das briguinhas de meninas.</p>
+            </section>
+        </div>
+    </main>
+
+    <div id="modal-container" class="modal-escondido">
+        <div class="modal-conteudo">
+            <span class="modal-fechar">&times;</span>
+            <div id="modal-corpo"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 LedFilm. Todos os direitos reservados.</p>
+        <p>Feito por Rodolpho Rosa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

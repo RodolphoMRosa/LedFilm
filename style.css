@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+#instagram-link {
+    position: absolute;
+    left: 20px;
+    bottom: 20px; 
+    z-index: 10;
+}
+
+#instagram-link img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+#instagram-link img:hover {
+    transform: scale(1.1);
+}
+
+.logo-container {
+    position: relative;
+    line-height: 0;
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    vertical-align: middle;
+}
+
+.menu-principal {
+    background-color: white;
+    padding: 12px 0;
+    border: 8px solid #000000;
+    margin: 0;
+}
+
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-principal li {
+    margin: 5px 12px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #555; 
+    padding: 14px 25px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-principal a:hover {
+    background-color: #080808;
+    color: white;
+}
+
+.conteudo-secao {
+    display: none;
+}
+
+#galeria-container {
+    position: relative;
+    max-width: 630px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#imagem-galeria {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.btn-nav-galeria {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-nav-galeria:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#btn-anterior {
+    left: 15px;
+}
+
+#btn-proximo {
+    right: 15px;
+}
+
+#modal-container {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal-escondido {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-visivel {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-conteudo {
+    background-color: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #555;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-fechar {
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.modal-fechar:hover,
+.modal-fechar:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.info-sobre-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 28px;
+    text-align: right;
+}
